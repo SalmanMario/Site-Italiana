@@ -1,5 +1,9 @@
-export function Homepage(){
-    return(
-        <h1>HomePage</h1>
-    )
+import { Container, Typography } from "@mui/material";
+
+export function Homepage() {
+  return (
+    <Container>
+      <Typography variant="h1">Tare</Typography>
+    </Container>
+  );
 }

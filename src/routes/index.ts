@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 export const routes = {
   root: () => "/",
   verbs: () => "/verbs",
+  clothes: () => "/clothes",
   error404: () => "/error404",
   // p este un obiect cu prop id
 };
