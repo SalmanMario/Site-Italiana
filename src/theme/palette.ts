@@ -5,6 +5,6 @@ export const palette: ThemeOptions["palette"] = {
   primary: { main: "#ffffff" },
   // secondary: {main: '#14213d'},
   background: {
-    default: "#121212",
+    default: "#191B21",
   },
 };

@@ -1,0 +1,148 @@
+import { ItemInfo } from "./ItemInterface";
+
+export const clothesData: ItemInfo[] = [
+  {
+    nameRO: "Tricou",
+    emoji: "👕",
+    singular: "La maglietta",
+    plural: "Le magliette",
+  },
+  {
+    nameRO: "Pulover",
+    emoji: "🧥",
+    singular: "Il maglione",
+    plural: "I maglioni",
+  },
+  {
+    nameRO: "Palton",
+    emoji: "🥼",
+    singular: "Il cappotto",
+    plural: "I cappotti",
+  },
+  {
+    nameRO: "Esarfa",
+    emoji: "🧣",
+    singular: "La sciarpa",
+    plural: "Le sciarpe",
+  },
+  {
+    nameRO: "Palarie",
+    emoji: "🎩",
+    singular: "Il capello",
+    plural: "I cappeli",
+  },
+  {
+    nameRO: "Camasa",
+    img: "https://images.emojiterra.com/mozilla/512px/1f455.png",
+    singular: "La camicia",
+    plural: "Le camicie",
+  },
+  {
+    nameRO: "Bluza",
+    emoji: "👚",
+    singular: "La camicetta",
+    plural: "Le camicette",
+  },
+  {
+    nameRO: "Curea",
+    img: "https://cdn-icons-png.flaticon.com/512/363/363334.png",
+    singular: "La cintura",
+    plural: "Le cinture",
+  },
+  {
+    nameRO: "Pantaloni",
+    emoji: "👖",
+    singular: "I Pantaloni",
+    plural: "I Pantaloni",
+  },
+  {
+    nameRO: "Blugi",
+    emoji: "👖",
+    singular: "I jeans",
+    plural: "I jeans",
+  },
+  {
+    nameRO: "Pantaloni scurti",
+    emoji: "🩳",
+    singular: "I pantaloncini",
+    plural: "shorts",
+  },
+  {
+    nameRO: "Fusta",
+    img: "https://cdn-icons-png.flaticon.com/512/2236/2236916.png",
+    singular: "La gonna",
+    plural: "Le gonne",
+  },
+  {
+    nameRO: "Rochie",
+    emoji: "👗",
+    singular: "Il vestito",
+    plural: "I vestiti",
+  },
+  {
+    nameRO: "Cravata",
+    emoji: "👔",
+    singular: "La cravatta",
+    plural: "Le cravatte",
+  },
+  {
+    nameRO: "Costum",
+    emoji: "🕴️",
+    singular: "Il completo",
+    plural: "I completi",
+  },
+  {
+    nameRO: "Pantofi",
+    emoji: "👞",
+    singular: "La scarpa",
+    plural: "Le scarpe",
+  },
+  {
+    nameRO: "Pantofi de alergat",
+    emoji: "👟",
+    singular: "La scarpa da ginnastica",
+    plural: "Le scarpe da ginnastica",
+  },
+  {
+    nameRO: "Cizme",
+    emoji: "🥾",
+    singular: "Lo stivale",
+    plural: "Gli stivali",
+  },
+  {
+    nameRO: "Papuci",
+    img: "https://images.emojiterra.com/google/android-11/512px/1fa74.png",
+    singular: "Le pantofole",
+    plural: "Le ciabatte",
+  },
+  {
+    nameRO: "Sosete",
+    emoji: "🧦",
+    singular: "Il calzino",
+    plural: "I calzini",
+  },
+  {
+    nameRO: "Chiloti",
+    img: "https://images.emojiterra.com/google/android-12l/512px/1fa72.png",
+    singular: "L'intimo",
+    plural: "L'intimo",
+  },
+  {
+    nameRO: "Pijama",
+    img: "https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/78198/pajamas-clipart-md.png",
+    singular: "Il pigiama",
+    plural: "I pigiami",
+  },
+  {
+    nameRO: "Costum de baie",
+    emoji: "👙",
+    singular: "Il costume da bagno",
+    plural: "I costumi da bagno",
+  },
+  {
+    nameRO: "Manusi",
+    emoji: "🧤",
+    singular: "Il guanto",
+    plural: "I guanti",
+  },
+];

@@ -1,9 +1,17 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Grid } from "@mui/material";
+import { CardItems } from "../components/CardItems";
+import { clothesData } from "../database/clothesDB";
 
 export function Clothes() {
   return (
-    <Box>
-      <Typography variant="h1">Clothes Pages</Typography>
+    <Box mt={2}>
+      <Grid container gap={4}>
+        {clothesData.map((item, index) => (
+          <Grid item key={index}>
+            <CardItems data={item} />
+          </Grid>
+        ))}
+      </Grid>
     </Box>
   );
 }

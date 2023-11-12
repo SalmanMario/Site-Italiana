@@ -79,8 +79,7 @@ export default function ResponsiveDrawer(props: Props) {
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
-        }}
-      ></AppBar>
+        }}></AppBar>
       <Box component="nav" sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }} aria-label="mailbox folders">
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Drawer
@@ -94,8 +93,7 @@ export default function ResponsiveDrawer(props: Props) {
           sx={{
             display: { xs: "block", sm: "none" },
             "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
-          }}
-        >
+          }}>
           {drawer}
         </Drawer>
         <Drawer
@@ -104,8 +102,7 @@ export default function ResponsiveDrawer(props: Props) {
             display: { xs: "none", sm: "block" },
             "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
           }}
-          open
-        >
+          open>
           {drawer}
         </Drawer>
       </Box>
