@@ -8,13 +8,11 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import Toolbar from "@mui/material/Toolbar";
 import { Link } from "react-router-dom";
-import HomeIcon from "@mui/icons-material/Home";
-import EditIcon from "@mui/icons-material/Edit";
-import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
+import "../App.css";
+import { otherMapping, pageMapping } from "./PageCreation";
 
-const drawerWidth = 240;
+const drawerWidth = 260;
 
 interface Props {
   /**
@@ -32,27 +30,28 @@ export default function ResponsiveDrawer(props: Props) {
     setMobileOpen(!mobileOpen);
   };
 
-  const pageMapping = {
-    Home: {
-      url: "/",
-      icon: <HomeIcon />,
-    },
-    Verbs: {
-      url: "/verbs",
-      icon: <EditIcon />,
-    },
-    Clothes: {
-      url: "/clothes",
-      icon: <EmojiEmotionsIcon />,
-    },
+  const [searchInput, setSearchInput] = React.useState("");
+
+  const handleSearchInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchInput(event.target.value);
   };
+
+  const filteredPageMapping = Object.fromEntries(
+    Object.entries(pageMapping).filter(([label]) => label.toLowerCase().includes(searchInput.toLowerCase()))
+  );
+
+  const filteredOtherMapping = Object.fromEntries(
+    Object.entries(otherMapping).filter(([label]) => label.toLowerCase().includes(searchInput.toLowerCase()))
+  );
 
   const drawer = (
     <div>
-      <Toolbar />
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <input className="searchBar" type="text" value={searchInput} onChange={handleSearchInputChange} />
+      </Box>
       <Divider />
       <List>
-        {Object.entries(pageMapping).map(([label, pageData]) => (
+        {Object.entries(filteredPageMapping).map(([label, pageData]) => (
           <ListItem style={{ color: "white" }} component={Link} to={pageData.url} key={label}>
             <ListItemIcon>{pageData.icon}</ListItemIcon>
             <ListItemText primary={label} />
@@ -61,10 +60,12 @@ export default function ResponsiveDrawer(props: Props) {
       </List>
       <Divider />
       <List>
-        <ListItem component={Link} to="/">
-          <ListItemIcon></ListItemIcon>
-          <ListItemText primary="W.I.P" />
-        </ListItem>
+        {Object.entries(filteredOtherMapping).map(([label, pageData]) => (
+          <ListItem style={{ color: "white" }} component={Link} to={pageData.url} key={label}>
+            <ListItemIcon>{pageData.icon}</ListItemIcon>
+            <ListItemText primary={label} />
+          </ListItem>
+        ))}
       </List>
     </div>
   );
@@ -80,7 +81,10 @@ export default function ResponsiveDrawer(props: Props) {
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
         }}></AppBar>
-      <Box component="nav" sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }} aria-label="mailbox folders">
+      <Box
+        component="nav"
+        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+        aria-label="mailbox folders">
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Drawer
           container={container}

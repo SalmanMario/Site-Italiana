@@ -1,1 +1,15 @@
+.searchBar {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #191b21;
+  border: 2px solid #149eca;
+}
 
+textarea:focus,
+input:focus {
+  color: #149eca;
+  font-size: 1rem;
+  font-family: "Roboto";
+  font-weight: 700;
+  outline: none;
+}
