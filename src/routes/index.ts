@@ -6,6 +6,8 @@ export const routes = {
   root: () => "/",
   verbs: () => "/verbs",
   clothes: () => "/clothes",
+  animals: () => "/animals",
+  foods: () => "/foods",
   error404: () => "/error404",
   // p este un obiect cu prop id
 };
