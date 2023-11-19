@@ -52,7 +52,7 @@ export default function ResponsiveDrawer(props: Props) {
       <Divider />
       <List>
         {Object.entries(filteredPageMapping).map(([label, pageData]) => (
-          <ListItem style={{ color: "white" }} component={Link} to={pageData.url} key={label}>
+          <ListItem component={Link} to={pageData.url} key={label}>
             <ListItemIcon>{pageData.icon}</ListItemIcon>
             <ListItemText primary={label} />
           </ListItem>
@@ -61,7 +61,7 @@ export default function ResponsiveDrawer(props: Props) {
       <Divider />
       <List>
         {Object.entries(filteredOtherMapping).map(([label, pageData]) => (
-          <ListItem style={{ color: "white" }} component={Link} to={pageData.url} key={label}>
+          <ListItem component={Link} to={pageData.url} key={label}>
             <ListItemIcon>{pageData.icon}</ListItemIcon>
             <ListItemText primary={label} />
           </ListItem>

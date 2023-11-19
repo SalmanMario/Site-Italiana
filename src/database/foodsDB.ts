@@ -308,10 +308,10 @@ export const foodsData: ItemInfo[] = [
     plural: "La carne di pollo",
   },
   {
-    nameRO: "Peste",
-    emoji: "🐟",
-    singular: "Il pesce",
-    plural: "I pesci",
+    nameRO: "Cartofi Prajiti",
+    emoji: "🍟",
+    singular: "Le patatine fritte",
+    plural: "Le patatine fritte",
   },
   {
     nameRO: "Popcorn",
@@ -332,10 +332,10 @@ export const foodsData: ItemInfo[] = [
     plural: "	I panini",
   },
   {
-    nameRO: "Cartofi Prajiti",
-    emoji: "🍟",
-    singular: "La patate fritte",
-    plural: "Le patatine fritte",
+    nameRO: "Peste",
+    emoji: "🐟",
+    singular: "Il pesce",
+    plural: "I pesci",
   },
   {
     nameRO: "Oua",

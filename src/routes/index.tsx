@@ -6,6 +6,8 @@ import { Applayout } from "../components/AppLayout";
 import { Clothes } from "../pages/Clothes";
 import { Animals } from "../pages/Animals";
 import { Foods } from "../pages/Foods";
+import { Colors } from "../pages/Colors";
+import { Objects } from "../pages/Objects";
 
 export function RoutesPages() {
   return (
@@ -16,6 +18,8 @@ export function RoutesPages() {
         <Route path={route(routes.clothes)} element={<Clothes />} />
         <Route path={route(routes.animals)} element={<Animals />} />
         <Route path={route(routes.foods)} element={<Foods />} />
+        <Route path={route(routes.colors)} element={<Colors />} />
+        <Route path={route(routes.objects)} element={<Objects />} />
       </Route>
     </Routes>
   );

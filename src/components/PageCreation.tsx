@@ -20,6 +20,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import ArticleIcon from "@mui/icons-material/Article";
 import FeedIcon from "@mui/icons-material/Feed";
+import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
 
 export const pageMapping = {
   HomePage: {
@@ -60,6 +61,10 @@ export const otherMapping = {
   Colors: {
     url: "/colors",
     icon: <ColorLensIcon />,
+  },
+  Objects: {
+    url: "/objects",
+    icon: <EmojiObjectsIcon />,
   },
   Dates: {
     url: "/dates",

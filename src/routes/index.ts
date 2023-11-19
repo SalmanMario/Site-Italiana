@@ -8,6 +8,8 @@ export const routes = {
   clothes: () => "/clothes",
   animals: () => "/animals",
   foods: () => "/foods",
+  colors: () => "/colors",
+  objects: () => "/objects",
   error404: () => "/error404",
   // p este un obiect cu prop id
 };
